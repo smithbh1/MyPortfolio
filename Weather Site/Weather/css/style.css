@@ -1,0 +1,410 @@
+main{
+    display: block;
+}
+body{
+    
+    background-color: rgba(252, 231, 5, 1);
+}
+
+.banner_message{
+    display: none;
+    padding: 1em;
+    text-align: center;
+    background-color: beige;
+}
+img{
+    width: 100%;
+    
+}
+header,
+.preston_events,
+.fish_events,
+.soda_events {
+	
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+    background-color: rgba(241, 99, 3, 1);
+    
+}
+div .heading{
+    padding: 0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+.heading h1{
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    
+}
+.slogan{
+    font-style: italic;
+}
+
+header img {
+	width: 80px;
+	
+}
+nav{
+    margin: 0 auto;
+    max-width: 780px;
+    background-color: rgba(250, 116, 7, 0.842);
+    
+}
+.navigation{
+
+    margin-top:0;
+    list-style-type: none;
+    padding: 0;
+}
+.navigation li:first-child{
+    display: block;
+}
+.navigation li{
+    display: none;
+}
+
+.navigation a{
+    color: black; 
+    text-decoration: none;
+    display: block;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 18px;
+
+}
+.navigation .link.active{
+    color: white;
+    background-color: rgba(168, 78, 4, 0.842);
+}
+.link:hover{
+    background-color:rgba(168, 78, 4, 0.842) ;
+    text-decoration: underline;
+}
+.responsive li{
+    display: block;
+}
+.grid_container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 780px;
+}
+picture img,
+.hero_div{
+    display: block;
+    max-width: 780px;
+    margin: 10px auto;
+}
+
+figure{
+    background-color: aliceblue;
+}
+
+figcaption{
+    display: none;
+    padding: .2em;
+    font-family: Merriweather, sans-serif;
+}
+
+
+.contact_info{
+    margin-left:auto;
+    margin-right: auto;
+}
+ 
+    
+
+.weather_summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .5em;
+    background-color: beige;
+    box-shadow: 0 0 30px #333;
+    opacity: .8;
+    text-align: center;
+}
+
+.weather_summary,
+.preston_events,
+.soda_events,
+.fish_events{
+    max-width: 780px;
+    margin: 10px auto;
+}
+.weather_summary h3{
+    text-decoration: underline;
+}
+.label{
+    font-size:small;
+    grid-column-start: 1 ;
+    grid-column-end: 1;
+}
+.value{
+    font-size:small;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+h2,
+h3{
+    text-align: center;
+}
+.forecast,
+.fish_haven_forecast,
+.soda_springs_forecast,
+#forecast_heading{
+    display: none;
+}
+
+.article_div h3,
+.article_div p{
+    padding: .5em;
+        
+}
+.article_div{
+    max-width: 780px;
+    background-color: rgba(241, 98, 3, 0.541);
+}
+.town_info{
+    max-width: 780px;
+    margin: 10px auto;
+    border: 1px solid #333;
+    background-color: bisque;
+    text-align: center;
+}
+
+.contact_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: .5em;
+    background-color: rgba(250, 116, 7, 0.842);
+    border: solid 1px black;
+    text-align: center;
+    
+}
+.map{
+    margin: 10px auto;
+    max-width: 300px;
+    height: auto;
+}
+
+
+.contact_info a{
+    color: black
+}
+.contact_info a:hover{
+    background-color: rgba(168, 78, 4, 0.842);
+}
+
+
+footer{
+    font-size: 16px;
+    padding: .5em;
+    background-color: rgba(241, 99, 3, 1);
+    margin: 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form{
+    margin: 10px auto;
+    padding: .25em;
+}
+form,
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: beige;
+    max-width: 780px;
+    
+}
+input{
+    margin: .5em;
+}
+p{
+    font-family: Merriweather, serif ;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 32.5em){
+
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+    .navigation li.active a{
+        color: white;
+        background-color:rgba(168, 78, 4, 0.842) ;   
+    }
+	.navigation li:first-child {
+		display: none;
+	}
+    header img {
+        width: 100px;
+        height: auto;
+    }
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 960px;
+    }
+    .weather_summary{
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        ;
+    }
+    
+    h1{
+        font-size: 35px;
+    }
+    
+    .hero_div,
+    .hero_img{
+        margin: 10px auto;
+        position: relative;
+
+    }
+    
+    .forecast,
+    .fish_haven_forecast,
+    .soda_springs_forecast
+    {
+        
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;  
+        
+    }
+    #forecast_heading{
+        display: block;
+    }
+    .forecast div,
+    .fish_haven_forecast div,
+    .soda_springs_forecast div{
+        
+        text-align: center;
+        margin: 2em;
+        background-color: beige;
+        border: solid 2px black;
+        padding: 1em;
+        
+    }
+    .article_img{
+        padding: .5em;
+        max-width: 300px;
+        
+    }
+    
+    
+    .article_div,
+    .article_img{
+        display: block;
+        margin: 10px auto;
+        
+    }
+    .article_div p{
+        padding: 1em;
+    }
+    .sunny{
+        max-width: 10vw;
+    }
+    
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    section:nth-child(even) img{
+        grid-column: 1;
+        grid-row: 1 / 5;
+        
+    }
+    section:nth-child(even) h2,
+    section:nth-child(even) p{
+        grid-column: 2;
+    }
+    section:nth-child(odd) img{
+        grid-column: 2;
+        grid-row: 1 / 5;
+        
+        
+    }
+    section:nth-child(odd) h2,
+    section:nth-child(odd) p{
+        grid-column: 1;
+    }
+    /*form{
+        display:grid;
+        grid-template-columns: .2fr 1fr;
+        max-width: 780px;
+        margin: 10px auto;
+    }
+    form label{
+        grid-column: 1 / 1;
+    }
+    form input{
+        margin:.5em;
+    }
+    button{
+        grid-column: 2 / 2;
+        max-width: 150px;
+        align-items: center;
+        justify-content: center;
+    }*/
+    
+    footer{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 80em){
+    h1{
+        font-size: 40px;
+    }
+    
+    header img {
+        width: 120px;
+        height: auto;
+    }
+    .grid_container{
+        max-width: 1080px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    figure:hover{
+        box-shadow: 0 0 50px #333;
+    }
+    figcaption{
+        display:block;
+        font-size: 12px;
+        background-color: aliceblue;
+    }
+    .town_info {
+        background-color: rgba(252, 231, 5, 1);
+        border: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    section{
+        padding: .25em;
+        background-color:beige ;
+        margin: .5em;
+        border: 1px solid #333;
+        display: block;
+    }
+    
+    
+    footer{
+        font-size: 20px;
+    }
+}

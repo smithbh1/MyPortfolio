@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="weather updates and information for Preston, Idaho">
+    <title>Sun-day Preston Town Information</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/sun.ico">
+
+</head>
+
+<body>
+    <div class="banner_message">Saturday = Preston Pancakes in the Park 9:00 a.m. Saturday at the city park pavilion
+    </div>
+    <header>
+        <img src="images/sun.png" alt="sun with sunglasses">
+        <div class="heading">
+            <h1>Sun-Day Weather Center</h1>
+            <div class="slogan">The most reliable and up-to-date weather!</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham_menu" href="#">Menu</a></li>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="preston.html">Preston</a></li>
+            <li class="link active"><a href="soda_springs.html">Soda Springs</a></li>
+            <li class="link"><a href="fish_haven.html">Fish Haven</a></li>
+            <li class="link"><a href="storm_center.html">Storm Center</a></li>
+            <li class="link"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs Idaho</h2>
+        <div class="hero_div">
+            <div class="hero_img">
+                <img src="images/sodasprings.jpg" alt="picture of farmland and trees">
+            </div>
+            <div class="weather_summary">
+                <h3>Weather Summary</h3>
+
+                <p class="label">Currently:</p>
+                <p class="value" id="desc"></p>
+                <p class="label">Current Temp:</p>
+                <p class="value"><span id="tempF"></span>&deg;F</p>
+                <p class="label">Wind Chill</p>
+                <p class="value"><span id="windChill">N/A</span> &deg;F</p>
+                <p class="label">Humidity:</p>
+                <p class="value" id="humidity"></p>
+                <p class="label">Wind Speed:</p>
+                <p class="value"><span id="speed"></span> mph</p>
+
+            </div>
+        </div>
+        <div class="soda_events">
+
+        </div>
+        <h3 id="forecast_heading">5 Day Forecast</h3>
+        <div class="soda_springs_forecast">
+
+
+        </div>
+        <div class="article_div">
+            <img class="article_img" src="images/soda_article.jpg" alt="lit candle with peace sign">
+            <h3>Carbonation Nation</h3>
+
+            <p>The city is named for the hundreds of natural springs of carbonated water that are located in and around
+                the city. The springs were well known to Native Americans and were a famous landmark along the Oregon
+                Trail in the middle 19th century. Today the city is also known as the location of the Soda Springs
+                Geyser, which was unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool"
+                bathing attraction. Instead they drilled into a chamber of highly pressurized carbon dioxide gas and
+                cold water and the geyser was released. After running for weeks, and flooding the downtown area, it was
+                capped and manually released when requested as a tourist attraction. Now it is let loose every hour on
+                the hour by a timed release valve. Its height and volume have not decreased after many years. There are
+                viewing platforms at either end of the travertine mound where the geyser erupts. Interpretive signs are
+                located on the platforms explaining this phenomenon.</p>
+        </div>
+        <div class="contact_info">
+            <div class="map">
+                <img src="images/map.PNG" alt="google map view of weather center">
+            </div>
+            <div class="contact_text">
+                <h4>Sun-Day Weather</h4>
+                <a
+                    href="https://www.google.com/search?q=30+N+1st+E+Preston%2C+ID+83263&safe=active&rlz=1C1UEAD_enUS934US934&sxsrf=ALeKk03n9DFC89bnr0rlVU5AA3Wp9uTZIA%3A1621733774154&ei=jrGpYKnxCMnK-gTEwYC4BA&oq=30+N+1st+E+Preston%2C+ID+83263&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECc6BwgAEEcQsAM6BwgjELACECdQtTlYp5ABYKScAWgEcAJ4AIABdYgB4AOSAQM0LjGYAQCgAQKgAQGqAQdnd3Mtd2l6yAEEwAEB&sclient=gws-wiz&ved=0ahUKEwip8JyM1d7wAhVJpZ4KHcQgAEcQ4dUDCA4&uact=5">30
+                    N 1st E Preston, ID 83263</a>
+                <p>&phone; 555-555-5555 </p>
+                <p>&#9993; sundayemail@email.net</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; <span>Sun-Day Weather</span> <span>-- Brian Smith</span>
+        <p id="last_visit"></p>
+        <p id="currentdate"></p>
+        <script src="js/script.js"></script>
+        <script src="js/windChill.js"></script>
+        <script src="js/weather-api.js"></script>
+        <script src="js/soda_events.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: [
+                        'Merriweather'
+                    ]
+                }
+            });
+        </script>
+    </footer>
+</body>
+
+</html>
