@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country AJAX-Provided Information</title>
+</head>
+<body>
+        <button type="button" value="USA" onclick="loadUSATxt()">USA</button >
+        <button type="button" value="Canada" onclick="loadCanadaTxt()">Canada</button>
+        <button type="button" value="Mexico" onclick="loadMexicoTxt()">Mexico</button>
+        <button type="button" value="Russia" onclick="loadRussiaTxt()">Russia</button>
+    
+<p id="text_display">Top 10 Cities</p>
+
+<form>
+    <input type="text" id="file_specified" value="json.txt">
+    <button type="button" onclick="loadStudentInfo()">Find Info</button>
+    <p id="json_display"></p>
+</form>
+<script src="assign09.js"></script>
+</body>
+</html>

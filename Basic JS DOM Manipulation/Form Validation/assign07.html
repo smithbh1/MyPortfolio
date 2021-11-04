@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="assign07.css">
+
+</head>
+<body>
+    <h1>Mortgage Calculator</h1>
+    <form>
+        <label for= "apr">APR (ex. 7.25)</label>
+        <input type="text" id="apr" name="apr" oninput="error_notification_apr()">
+        <label for="term">Loan Term (in years)</label>
+        <input type = "text" id="term" name="term" oninput="error_notification_term()">
+        <label for= "amount">Total Amount(ex. 100000)</label>
+        <input type="text" id="amount" name="amount" oninput="error_notification_amount()">
+        <button type = "button" id="calculate" >Calculate Payment</button>
+        <input type="reset" id="clear">
+        <label for="payment">Monthly Payment</label>
+        <input type= "text" id="payment">
+    </form>
+    <div id="error_container">
+        <h4 id="apr_error_message">APR must be a number between 0 and 25</h4>
+        <h4 id="term_error_message">Term must be a number between 0 and 40</h4>
+        <h4 id="amount_error_message">Total Amount must be a number</h4>
+    </div>
+    
+    <script src = "assign07.js"></script>
+</body>
+</html>

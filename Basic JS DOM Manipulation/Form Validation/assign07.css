@@ -1,0 +1,21 @@
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label{
+    margin: .5em;
+    grid-column: 1 / 2;
+}
+input{
+    margin: .5em;
+    grid-column: 2 / 2;
+}
+button, input{
+    max-width: 100px;
+}
+#apr_error_message,
+#term_error_message,
+#amount_error_message{
+    display: none;
+    border: none;
+}
