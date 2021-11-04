@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listing of all businesses currently enrolled in the chamber of commerce">
+    <title>Chamber Directory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham_menu" href="#">Menu</a></li>
+            <li id="site_logo"><img src="images/santaquin_logo.png" alt="santaquin logo"></li>
+
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="city.html">Santaquin</a></li>
+            <li class="link"><a href="join.html">Join</a></li>
+            <li class="link active" ><a href="directory.html">Directory</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        
+    </header>
+  
+    <main>
+        <h2>Business Directory</h2>
+        <button type="button" onclick="grid()">Grid View</button>
+        <button type="button" onclick="list()">List View</button>
+        <div class="business_card">
+            
+        </div>
+    </main>
+    <footer>
+        
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.4368087300963!2d-111.73479748461541!3d40.04335197941027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874da44184944b33%3A0x29aa99b718a23ec7!2sPayson%20Santaquin%20Area%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1626878903097!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact_info">
+            <p>22 South Main St.</p>
+            <p>Payson, UT 84651</p>
+            <p>&phone; (801) 465-2634</p>
+            <p>&#9993; director@paysonsantaquinchamber.com</p>
+            
+            <p>Last Modified: <span id="lastModified"></span></p></div>
+
+        </div>
+            
+
+    </footer>
+    <script src="js/directory.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Open Sans'
+                ]
+            }
+        });
+        </script>
+</body>
+</html>
