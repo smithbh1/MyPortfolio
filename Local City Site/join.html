@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application to join the Santaquin City Chamber of Commerce">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <title>Join us!</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham_menu" href="#">Menu</a></li>
+            <li id="site_logo"><img src="images/santaquin_logo.png" alt="santaquin logo"></li>
+
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="city.html">Santaquin</a></li>
+            <li class="link active" ><a href="join.html">Join</a></li>
+            <li class="link"><a href="directory.html">Directory</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+
+    </header>
+
+    <main>
+        <form method="get" action="thank_you.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name*</label>
+                <input type="text" name="fname" id="fname" required minlength="5" pattern="/[A-Za-z]{5}+/">
+                <label for="lname">Last Name*</label>
+                <input type="text" name="lname" id="lname" required minlength="5" pattern="/[A-Za-z]{5}+/"><br>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title"><br>
+                <label for="email">Email*</label>
+                <input type="email" name="email" required placeholder="my@example.com">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="xxxxxxxxxx" minlength="10">
+                </fieldset>
+                <fieldset>
+                <legend>Business Information</legend>
+                <label for="bname">Business Name*</label>
+                <input type="text" name="bname" id="bname" required><br>
+                <label for="baddress">Business Address</label>
+                <input type="text" name="baddress" id="baddress"><br>
+                <label for="bwebsite">Business Website</label>
+                <input type="text" name="bwebsite" id="bwebsite"><br>
+                <label for="bdescription">Business Description</label>
+                <input type="text" name="bdescription" id="bdescription"><br>
+                <label for="membership">Membership Level</label>
+                <select name="membership">
+                    <option value="" disabled selected>Choose Membership Level...</option>
+                    <option value="bronze">Non-profit- $100</option>
+                    <option value="bronze">Bronze- $200</option>
+                    <option value="silver">Silver- $400</option>
+                    <option value="gold">Gold- $1000</option>
+                </select><br>
+                <button type="submit">Join</button>
+            </fieldset>
+        </form>
+        <div class="membership">
+        <h2>Non-Profit</h2>
+        <p>This selection allows for one shout-out on our home page per month to promote awareness of your business. It
+            also allows 1 planned event geared toward your business per year.</p>
+        <h2>Bronze</h2>
+        <p>Our bronze members receive the opportunity to have 2 shout-outs on our home page per month and 1 planned event every 6 months.</p>
+        <h2>Silver</h2>
+        <p>Silver members get 4 shout-outs per month on our home page, we buy samples of your product to give out at local community events, and plan 1 event every 3 months to promote your business.</p>
+        <h2>Gold</h2>
+        <p>Our gold members get everything our silver members get, but an additional 8 events per year! This brings the event total to 12, so we feature an event for your business once a month!</p>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.4368087300963!2d-111.73479748461541!3d40.04335197941027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874da44184944b33%3A0x29aa99b718a23ec7!2sPayson%20Santaquin%20Area%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1626878903097!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact_info">
+            <p>22 South Main St.</p>
+            <p>Payson, UT 84651</p>
+            <p>&phone; (801) 465-2634</p>
+            <p>&#9993; director@paysonsantaquinchamber.com</p>
+            <p>Last Modified: <span id="lastModified"></span></p></div>
+
+        </div>
+            
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Open Sans'
+                ]
+            }
+        });
+        </script>
+</body>
+
+</html>

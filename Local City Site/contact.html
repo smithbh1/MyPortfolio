@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santaquin chamber of commerce contact request ">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham_menu" href="#">Menu</a></li>
+            <li id="site_logo"><img src="images/santaquin_logo.png" alt="santaquin logo"></li>
+
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="city.html">Santaquin</a></li>
+            <li class="link"><a href="join.html">Join</a></li>
+            <li class="link"><a href="directory.html">Directory</a></li>
+            <li class="link active" ><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+
+    </header>
+  
+    <main>
+        <h2>Contact Us</h2>
+        
+        <form method="GET" action="thank_you.html">
+            <fieldset>
+            <legend>Submit a Request</legend>
+            <label for="fname">First Name*</label>
+            <input type="text" name="fname" id="fname" required minlength="5" pattern="/[A-Za-z]{5}+/">
+            <label for="lname">Last Name*</label>
+            <input type="text" name="lname" id="lname" required minlength="5" pattern="/[A-Za-z]{5}+/"><br>
+            <label for="email">Email*</label>
+            <input type="email" name="email" required placeholder="my@example.com"><br>
+            <label for="comment">Question/Comment*</label><br>
+            <textarea name="comment" id="comment" cols="40" rows="15"></textarea><br>
+            <button type="submit">Send</button>
+        </fieldset>
+        <h2>Board of Directors</h2>
+        <div class="board">
+        </form>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Benjamin Reeves</td>
+                <td>City Manager</td>
+                <td>breeves@santaquin.org</td>
+            </tr>
+            <tr>
+                <td>Dennis Marker</td>
+                <td>Operations Manager</td>
+                <td>dmarker@santaquin.org</td>
+            </tr>
+            <tr>
+                <td>Shannon Hoffman</td>
+                <td>Admin Service Director/Treasurer</td>
+                <td>shoffman@santaquin.org</td>
+            </tr>
+            <tr>
+                <td>Aaron Shirley</td>
+                <td>Finance Director/City Recorder</td>
+                <td>ashirley@santaquin.org</td>
+            </tr>
+            <tr>
+                <td>Suzanne McDowell</td>
+                <td>Admin Assistant</td>
+                <td>smcdowell@santaquin.org</td>
+            </tr>
+            <tr>
+                <td>Joyce Lamb</td>
+                <td>Billing Clerk</td>
+                <td>jlamb@santaquin.org</td>
+            </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.4368087300963!2d-111.73479748461541!3d40.04335197941027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874da44184944b33%3A0x29aa99b718a23ec7!2sPayson%20Santaquin%20Area%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1626878903097!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact_info">
+            <p>22 South Main St.</p>
+            <p>Payson, UT 84651</p>
+            <p>&phone; (801) 465-2634</p>
+            <p>&#9993; director@paysonsantaquinchamber.com</p>
+            
+            <p>Last Modified: <span id="lastModified"></span></p></div>
+
+        </div>
+            
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Open Sans'
+                ]
+            }
+        });
+        </script>
+    
+</body>
+</html>
