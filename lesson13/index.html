@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santaquin Area chamber of commerce landing page">
+    <title>Santaquin Area Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham_menu" href="#">Menu</a></li>
+            <li id="site_logo"><img src="images/santaquin_logo.PNG" alt="santaquin logo"></li>
+            <li class="link active"><a href="index.html">Home</a></li>
+            <li class="link"><a href="city.html">Santaquin</a></li>
+            <li class="link"><a href="join.html">Join</a></li>
+            <li class="link"><a href="directory.html">Directory</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="hero_div">
+            <h1>Santaquin Area Chamber of Commerce</h1>
+            <img src="images/Loading....jpg" data-src="images/hero.jpg" alt="Santaquin city welcome sign">
+            <aside class="currentWeather">
+                <h3>Current Weather</h3>
+                <p class="label">Currently:</p>
+                <p class="value" id="desc"></p>
+                <p class="label">Temp:</p>
+                <p class="value"><span id="tempF"></span>&deg;F</p>
+                <p class="label">Humidity</p>
+                <p class="value" id="humidity"></p>
+            </aside>
+        </div>
+        <p id="alerts" onclick="disappear()"></p>
+    </header>
+
+    <main>
+        <h2>Commerce Mission</h2>
+        <p>Our mission is to create a solid foundation for our community. We know the key to this is investing resources
+            in local businesses and provide a network of success. If one of us wins, we all win. Let's build our
+            community together!</p>
+        <h2>Our Highlighted Businesses</h2>
+        <div class="business">
+            <div id="business1">
+                <img src="images/Loading....jpg" data-src="images/red_barn_logo.PNG" alt="red barn logo">
+                <p>The Red Barn has been around for quite some time and has provided the community with much-needed
+                    produce, sweets, and fun family adventures. Thank you!</p>
+            </div>
+            <div id="business2">
+                <img src="images/Loading....jpg" data-src="images/farmer_mac.jpg"
+                    alt="Mcmullin Orchards Logo">
+                <p>Mcmullin Orchards has been around for quite some time and has provided the community with much-needed
+                    fresh produce, great service, and outstanding quality. Thank you!</p>
+            </div>
+            <div id="business3">
+                <img src="images/Loading....jpg" data-src="images/ivanov's_market_logo.PNG" alt="ivanov's market logo">
+                <p>Ivanov's Market has been around for quite some time and has provided the community with much-needed
+                    various kinds of ingredients and cuisine from other parts of the world. Thank you!</p>
+            </div>
+        </div>
+        <a href="join.html"><h2>Join us!</h2></a>
+        <p>As part of the Santaquin Area Chamber of Commerce, you will get access to fantastic benefits that would
+            othewise be unavailable to you. Click down below to get your application started!</p>
+
+        <h2>3-Day Forecast</h2>
+        <div class="forecast">
+
+        </div>
+        <h2>Upcoming Events</h2>
+        <div class="events">
+
+            <div id="event1">
+                <h2>07/31 - 08/07</h3>
+
+                    <img src="images/Loading....jpg" data-src="images/orchard_days_logo.jpg"
+                        alt="orchard days event logo">
+                    <p>This is what we all have been waiting for the past year - the famous Santaquin Orchard Days! This
+                        is
+                        a time to celebrate Santaquin and its farmers who have helped us so much! Come join us from
+                        07/31 -
+                        08/07 to celebrate our heritage!</p>
+            </div>
+            <div id="event2">
+                <h2>08/02 - Santaquin Rodeo</h3>
+                    <img src="images/Loading....jpg" data-src="images/rodeo.jpg"
+                        alt="woman on horse holding the american flag">
+                    <p>One of our long-standing traditions is the Orchard Days Rodeo! With multiple events like calf
+                        roping,
+                        mutton bustin', and a dirt bike show that last the night, there is never a dull moment! </p>
+            </div>
+            <div id="event3">
+                <h2>08/03 - Santaquin Pageant</h3>
+                    <img src="images/Loading....jpg" data-src="images/pageant.jpg"
+                        alt="contestants in a beauty pageant">
+                    <p>The Santaquin Pageant is perfect for young women ages 6-16 to represent the best attributes
+                        Santaquin has to offer.</p>
+            </div>
+        </div>
+        <h2>Local Activities</h2>
+        <div class="activities">
+
+            <div id="activity1">
+                <h2>Tractor Tour</h2>
+                <img src="images/Loading....jpg" data-src="images/tractor.jpg" alt="pulling a wagon with a tractor">
+                <p>Because of the amount of farms and orchards thoughout Santaquin, we offer many tours and "U-Pick"
+                    opportunities to get you the fresh produce you need.</p>
+            </div>
+            <div id="activity2">
+                <h2>Hiking</h2>
+                <img src="images/Loading....jpg" data-src="images/santaquin_canyon.jpg"
+                    alt="hiking in Santaquin Canyon">
+                <p>Another great activity is hiking the great Santaquin Canyon! With only being 3.2 miles roundtrip with
+                    a 1700ft. elevation gain, it can be a great outdoor adventure for the whole family!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.4368087300963!2d-111.73479748461541!3d40.04335197941027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874da44184944b33%3A0x29aa99b718a23ec7!2sPayson%20Santaquin%20Area%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1626878903097!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact_info">
+            <p>22 South Main St.</p>
+            <p>Payson, UT 84651</p>
+            <p>&phone; (801) 465-2634</p>
+            <p>&#9993; director@paysonsantaquinchamber.com</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <p>Last Modified: <span id="lastModified"></span></p></div>
+
+        </div>
+            
+
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Open Sans'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
